@@ -1,5 +1,5 @@
-NAME = phusion/passenger
-VERSION = 0.9.15
+NAME = pk4media/passenger
+VERSION = 0.9.16
 
 .PHONY: all build_all \
 	build_customizable \
@@ -123,12 +123,12 @@ clean:
 	rm -rf full_image
 
 clean_images:
-	docker rmi phusion/passenger-customizable:latest phusion/passenger-customizable:$(VERSION) || true
-	docker rmi phusion/passenger-ruby19:latest phusion/passenger-ruby19:$(VERSION) || true
-	docker rmi phusion/passenger-ruby20:latest phusion/passenger-ruby20:$(VERSION) || true
-	docker rmi phusion/passenger-ruby21:latest phusion/passenger-ruby21:$(VERSION) || true
-	docker rmi phusion/passenger-ruby22:latest phusion/passenger-ruby22:$(VERSION) || true
-	docker rmi phusion/passenger-jruby17:latest phusion/passenger-jruby17:$(VERSION) || true
-	docker rmi phusion/passenger-nodejs:latest phusion/passenger-nodejs:$(VERSION) || true
-	docker rmi phusion/passenger-full:latest phusion/passenger-full:$(VERSION) || true
+	docker rmi $(NAME)-customizable:latest $(NAME)-customizable:$(VERSION) || true
+	docker rmi $(NAME)-ruby19:latest $(NAME)-ruby19:$(VERSION) || true
+	docker rmi $(NAME)-ruby20:latest $(NAME)-ruby20:$(VERSION) || true
+	docker rmi $(NAME)-ruby21:latest $(NAME)-ruby21:$(VERSION) || true
+	docker rmi $(NAME)-ruby22:latest $(NAME)-ruby22:$(VERSION) || true
+	docker rmi $(NAME)-jruby17:latest $(NAME)-jruby17:$(VERSION) || true
+	docker rmi $(NAME)-nodejs:latest $(NAME)-nodejs:$(VERSION) || true
+	docker rmi $(NAME)-full:latest $(NAME)-full:$(VERSION) || true
 
