@@ -13,7 +13,9 @@ else
 	echo deb https://oss-binaries.phusionpassenger.com/apt/passenger trusty main > /etc/apt/sources.list.d/passenger.list
 fi
 
-## Chris Lea's Node.js PPA
+exec_cmd 'curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -'
+
+## Nodesoruce's Node.js PPA
 echo deb https://deb.nodesource.com/node_0.12 trusty main > /etc/apt/sources.list.d/nodejs.list
 
 ## Rowan's Redis PPA
