@@ -14,7 +14,7 @@ else
 fi
 
 ## Chris Lea's Node.js PPA
-echo deb http://ppa.launchpad.net/chris-lea/node.js/ubuntu trusty main > /etc/apt/sources.list.d/nodejs.list
+echo deb https://deb.nodesource.com/node_0.12 trusty main > /etc/apt/sources.list.d/nodejs.list
 
 ## Rowan's Redis PPA
 echo deb http://ppa.launchpad.net/rwky/redis/ubuntu trusty main > /etc/apt/sources.list.d/redis.list
