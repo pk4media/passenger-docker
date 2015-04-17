@@ -65,6 +65,7 @@ build_nodejs:
 	rm -rf nodejs_image
 	cp -pR image nodejs_image
 	echo nodejs=1 >> nodejs_image/buildconfig
+	echo python=1 >> nodejs_image/buildconfig
 	echo final=1 >> nodejs_image/buildconfig
 	docker build -t $(NAME)-nodejs:$(VERSION) --rm nodejs_image
 
